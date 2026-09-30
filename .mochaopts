@@ -1,0 +1,10 @@
+--colors
+--growl
+--require ./mocha-requires/enzyme-configure
+--require jsdom-global/register
+--require babel-polyfill
+--require isomorphic-fetch
+--require ignore-styles
+--compilers js:babel-core/register
+--compilers jsx:babel-core/register
+app/src/**/__test__/**/*.test.*

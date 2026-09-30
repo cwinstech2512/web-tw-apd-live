@@ -1,0 +1,15 @@
+@import './app/assets/mixins/spacing';
+.privacy {
+  &-title {
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+  &-content {
+    font-size: 1rem;
+    & ul {
+      padding-inline-start: 1.5rem;
+    }
+  }
+}

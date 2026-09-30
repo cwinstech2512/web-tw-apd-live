@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+    <link rel="alternate" type="application/rss+xml" title="訂閱《亞太日報社台灣》&raquo; 資訊提供" href="<%= htmlWebpackPlugin.options.rss_link %>" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous"></link>
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+    <!-- for FB -->
+    <meta property="fb:app_id" content="<%= htmlWebpackPlugin.options.fb_appid %>" />
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:site_name" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= htmlWebpackPlugin.options.web_url %>" />
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.desc %>" />
+    <meta property="og:image" content="<%= htmlWebpackPlugin.options.fbpic %>" />
+
+    <!-- for Google -->
+    <meta name="author" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta name="copyright" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta name="description" content="<%= htmlWebpackPlugin.options.desc %>" />
+    <style>
+        .wp-block-embed {
+            margin: 1rem 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .wp-block-image {
+            margin: 1rem 0;
+            width: 100%;
+            height: auto;
+        }
+
+        .wp-block-embed-youtube {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .wp-block-embed-youtube iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .wp-block-embed-instagram .instagram-media {
+            max-width: unset !important;
+            min-width: unset !important;
+        }
+
+        .wp-block-video {
+            margin: 1rem 0;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 769px) {
+            .carousel-control-next-icon,
+            .carousel-control-prev-icon {
+                width: 30px;
+                height: 30px;
+            }
+            .carousel-control-next {
+                background-image: linear-gradient(90deg, #00000000 0%, #00000080 100%);
+            }
+            .carousel-control-prev {
+                background-image: linear-gradient(-90deg, #00000000 0%, #00000080 100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script async src="https://www.instagram.com/embed.js" type="text/javascript"></script>
+</body>
+
+</html>

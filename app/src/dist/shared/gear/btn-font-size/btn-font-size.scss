@@ -1,0 +1,15 @@
+.btn-font {
+  background-color: #e5e5e5;
+  color: #535353;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  &:first-letter {
+    font-size: 0.75rem;
+  }
+  &:active,
+  &:hover {
+    background-color: #aaaaaa;
+  }
+}

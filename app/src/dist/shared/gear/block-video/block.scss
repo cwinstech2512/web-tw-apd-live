@@ -1,0 +1,28 @@
+@import './app/assets/mixins/shared.scss';
+.block {
+  &-light {
+    background-color: #fff;
+  }
+  &-dark {
+    background-color: $soft-gray;
+  }
+  &-title {
+    font-family: 'Microsoft JhengHei';
+    cursor: pointer;
+  }
+}
+
+.btn-more {
+  font-family: 'Microsoft JhengHei';
+  cursor: pointer;
+  &:hover {
+    color: $color-blue !important;
+    & .btn-more-arrow {
+      padding-left: 2rem;
+    }
+  }
+  &-arrow {
+    transition: 0.2s ease-in-out;
+    padding-left: 1.5rem;
+  }
+}

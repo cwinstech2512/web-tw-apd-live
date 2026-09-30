@@ -1,0 +1,48 @@
+@import './app/assets/mixins/shared.scss';
+.login-btn {
+  font-size: 1rem !important;
+  float: right;
+}
+
+.login-btn-icon {
+  font-size: 2.4rem !important;
+  margin-right: 0.25rem;
+}
+
+.logged {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  &-icon {
+    font-size: 2rem !important;
+    margin-right: 0.25rem;
+  }
+  &-avatar {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.25rem;
+    background-size: contain;
+    border-radius: 1.2rem;
+    border: 2px solid #fff;
+  }
+  &-btn-hi {
+    width: 120px !important;
+  }
+  &-btn {
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    color: #fff !important;
+  }
+}
+
+/* 電腦版首頁，白底的Header */
+
+.white {
+  > .logged-avatar {
+    color: $primary-main;
+  }
+  > .logged-btn {
+    color: $primary-main !important;
+  }
+}

@@ -1,0 +1,51 @@
+@import './app/assets/mixins/shared.scss';
+.wrapper {
+  max-width: 1800px;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  &.header-bottom {
+    margin-top: 60px;
+    padding-top: 1rem;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  background: #ffffffcc;
+  &-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  &-relative {
+    position: relative;
+  }
+  &-fixed {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.white-header {
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 200;
+  display: flex;
+}
+
+.master {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &-content {
+    flex: 1;
+  }
+}

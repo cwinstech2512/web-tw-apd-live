@@ -1,0 +1,9 @@
+@import './app/assets/mixins/shared.scss';
+.link {
+  cursor: pointer;
+  color: $color-blue;
+  &:hover {
+    color: #{$color-blue}cc;
+    text-decoration: underline;
+  }
+}

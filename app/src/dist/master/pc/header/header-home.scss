@@ -1,0 +1,50 @@
+@import './app/assets/mixins/shared.scss';
+.header {
+  display: flex;
+  align-items: center;
+  // color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 100%;
+  &-logo {
+    height: 59px;
+    width: 140px;
+    margin-right: 100px;
+    display: none;
+  }
+  &-nav {
+    flex: 1;
+    width: 100%;
+  }
+  &-login {
+    width: 185px;
+    display: none;
+  }
+}
+
+.top {
+  > .header-logo {
+    display: block;
+  }
+  > .header-nav {
+    // width: calc(100% - 425px); // 扣掉Logo+登入的寬
+    width: calc(100% - 250px);
+  }
+  > .header-login {
+    display: block;
+  }
+}
+
+.white-header {
+  color: $primary-main;
+  > .header-logo {
+    display: block;
+  }
+  > .header-nav {
+    width: calc(100% - 425px); // 扣掉Logo+登入的寬
+  }
+  > .header-login {
+    display: block;
+    color: $primary-main;
+  }
+}

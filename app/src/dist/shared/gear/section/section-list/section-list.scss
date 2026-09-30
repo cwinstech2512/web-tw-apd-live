@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  padding: 8px;
+  border-bottom: 1px solid #e9e9e9;
+  &:first-of-type {
+    padding-top: 0;
+  }
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  &-image {
+    width: 45vw;
+    height: 25vw;
+    margin-right: 8px;
+  }
+  &-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  &-title {
+    height: 70%;
+    max-height: 3.64rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  &-date {
+    height: 30%;
+    font-size: 0.75rem;
+    color: #5d5d5d;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}

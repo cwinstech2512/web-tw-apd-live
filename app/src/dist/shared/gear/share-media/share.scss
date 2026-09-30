@@ -1,0 +1,65 @@
+.share {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  &-box {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-btn {
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    & .tooltip-text {
+      visibility: hidden;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+      position: absolute;
+      z-index: 1;
+      padding: 4px 8px;
+      bottom: -100%;
+      &.active {
+        visibility: visible;
+      }
+    }
+  }
+  &-fb {
+    background-image: url(@assets/images/media-icons/fb.png);
+  }
+  &-line {
+    background-image: url(@assets/images/media-icons/line.png);
+  }
+  &-ig {
+    background-image: url(@assets/images/media-icons/ig.png);
+  }
+  &-twitter {
+    background-image: url(@assets/images/media-icons/twitter.png);
+  }
+  &-weibo {
+    background-image: url(@assets/images/media-icons/weibo.png);
+  }
+  &-telegram {
+    background-image: url(@assets/images/media-icons/telegram.png);
+  }
+  &-messenger {
+    background-image: url(@assets/images/media-icons/messenger.png);
+  }
+  &-wechat {
+    background-image: url(@assets/images/media-icons/wechat.png);
+  }
+  &-other {
+    color: #ffffff;
+    background-color: #505050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

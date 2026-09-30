@@ -1,0 +1,82 @@
+@import './app/assets/mixins/shared.scss';
+.fast {
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  &-container {
+    background-color: rgb(13, 133, 73);
+  }
+  &-title {
+    color: $soft-gray;
+    font-weight: bold;
+    font-size: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &-box {
+    color: #fff;
+    position: relative;
+    width: 65%;
+  }
+  &-search {
+    padding: 0 !important;
+    width: 30%;
+    position: relative;
+  }
+  &-content {
+    cursor: pointer;
+    position: absolute;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    top: -0.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    transform: translateY(80%);
+    opacity: 0;
+    &.prev {
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(-80%);
+      animation: prev-move 1.5s;
+    }
+    &.active {
+      z-index: 2;
+      opacity: 1;
+      transform: translateY(0);
+      animation: move 1.5s;
+    }
+  }
+  &-item {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@keyframes prev-move {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

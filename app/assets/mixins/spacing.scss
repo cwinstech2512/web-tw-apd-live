@@ -1,0 +1,18 @@
+.m-1 {
+  margin: 0.5rem;
+}
+
+.m-2 {
+  margin: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  cursor: pointer !important;
+  &:hover {
+    text-decoration: underline !important;
+  }
+}

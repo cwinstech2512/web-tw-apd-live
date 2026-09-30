@@ -1,0 +1,41 @@
+.solid {
+  &-pointer {
+    cursor: pointer;
+  }
+  &-img {
+    width: 180px;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    position: relative;
+    border: 7px #fff solid;
+    &:hover .solid-title {
+      font-size: 1.6rem;
+    }
+    &:hover .solid-filter {
+      backdrop-filter: none;
+    }
+  }
+  &-filter {
+    backdrop-filter: grayscale(0.4);
+    width: 166px;
+    height: 166px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  &-title {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.6) 0.1em 0.1em 3px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    line-height: 155px;
+  }
+}

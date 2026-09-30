@@ -1,0 +1,35 @@
+@import './app/assets/mixins/shared.scss';
+.slider {
+  &-title {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: $color-blue;
+    }
+  }
+  &-normal {
+    width: 80%;
+    margin: auto;
+    &-title {
+      min-height: 52px;
+    }
+  }
+  &-video {
+    width: 100%;
+    min-height: 166px;
+    background: #dcdcdc;
+  }
+}
+
+@media (min-width: 769px) {
+  .slider-video {
+    min-height: 166px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-video {
+    min-height: 154px;
+  }
+}

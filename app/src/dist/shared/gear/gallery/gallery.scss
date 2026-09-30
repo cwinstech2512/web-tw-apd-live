@@ -1,0 +1,31 @@
+@import './app/assets/mixins/shared.scss';
+.gallery {
+  padding: 0 !important;
+  &-img {
+    width: 100%;
+    padding-bottom: 100%;
+    height: 0;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      filter: contrast(1.2);
+    }
+  }
+}
+
+.gallery-dark {
+  background-color: $soft-gray;
+}
+
+.gallery-light {
+  background-color: #fff;
+}
+
+@media (min-width: $mobile-width) {
+  .gallery-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}

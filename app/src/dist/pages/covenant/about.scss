@@ -1,0 +1,28 @@
+@import './app/assets/mixins/shared.scss';
+.about {
+  font-size: 1.5rem;
+  &-title {
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    font-weight: bold;
+  }
+  &-p {
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    &:last-child {
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+.bg-dark {
+  background-color: $soft-gray;
+}
+
+.contact {
+  &-p {
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem 3rem 1.5rem;
+  }
+  &-li {
+    margin-bottom: 0.5rem;
+  }
+}

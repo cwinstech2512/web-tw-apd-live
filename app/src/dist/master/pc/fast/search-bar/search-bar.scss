@@ -1,0 +1,43 @@
+@import './app/assets/mixins/shared.scss';
+.search-bar {
+  position: absolute;
+  right: 0;
+  top: -0.2rem;
+  min-width: 200px;
+  width: 100%;
+  &-box {
+    width: 100%;
+    background-color: #e9e9e9;
+    padding: 0 1rem;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  &-input {
+    font-size: 13px;
+    background: transparent;
+    border: 0px;
+    padding: 4px 0;
+    width: 80%;
+    width: calc(100%-4rem);
+    &:focus {
+      outline-width: 0px;
+    }
+  }
+  &-btn {
+    cursor: pointer;
+    padding: 3px 8px;
+    overflow: visible;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: initial;
+    color: #535353;
+    &:hover {
+      color: $color-blue;
+      background: #efefef;
+      border-radius: 50%;
+    }
+  }
+}

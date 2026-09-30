@@ -1,0 +1,53 @@
+{
+  "home": {
+    "path": "/",
+    "params": {
+      "auth": false
+    }
+  },
+  "article": {
+    "path": "/article/:articleId",
+    "params": {
+      "auth": false
+    }
+  },
+  "category": {
+    "path": "/main/:categoryId",
+    "params": {
+      "auth": false
+    }
+  },
+  "video-area": {
+    "path": "/video",
+    "params": {
+      "auth": false
+    }
+  },
+  "search-result": {
+    "path": ["/search/:keyword", "/search"],
+    "params": {
+      "auth": false
+    }
+  },
+  "tag-result": {
+    "path": "/tag/:tagId",
+    "params": {
+      "auth": false
+    }
+  },
+  "privacy": {
+    "params": {
+      "auth": false
+    }
+  },
+  "about": {
+    "params": {
+      "auth": false
+    }
+  },
+  "covenant": {
+    "params": {
+      "auth": false
+    }
+  }
+}

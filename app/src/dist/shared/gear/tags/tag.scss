@@ -1,0 +1,8 @@
+@import './app/assets/mixins/shared.scss';
+.tag {
+  cursor: pointer;
+  color: $primary-main;
+  &:hover {
+    color: #{$primary-main}cc;
+  }
+}

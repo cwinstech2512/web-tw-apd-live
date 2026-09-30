@@ -1,0 +1,56 @@
+{
+  "presets": ["react", "es2015", "stage-0", "env"],
+  "plugins": [
+    "lodash",
+    "transform-class-properties",
+    "syntax-flow",
+    "transform-flow-strip-types",
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    "transform-decorators-legacy",
+    [
+      "babel-plugin-import",
+      {
+        "libraryName": "@material-ui/core",
+        // Use "'libraryDirectory': ''," if your bundler does not support ES modules
+        "libraryDirectory": "esm",
+        "camel2DashComponentName": false
+      },
+      "core"
+    ],
+    [
+      "babel-plugin-import",
+      {
+        "libraryName": "@material-ui/icons",
+        // Use "'libraryDirectory': ''," if your bundler does not support ES modules
+        "libraryDirectory": "esm",
+        "camel2DashComponentName": false
+      },
+      "icons"
+    ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-react-inline-elements"
+      ]
+    },
+    "test": {
+      "plugins": [
+        "istanbul",
+        [
+          "babel-plugin-webpack-alias",
+          {
+            "config": "webpack.test.config.js"
+          }
+        ]
+      ]
+    }
+  }
+}

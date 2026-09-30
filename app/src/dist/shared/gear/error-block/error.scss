@@ -1,0 +1,107 @@
+.error {
+  margin: 15% 0;
+  position: relative;
+  min-height: 350px;
+  &-title {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a5a5a;
+  }
+  &-icon {
+    margin-bottom: 10%;
+    font-size: 12rem;
+    color: #7d7d7d;
+    display: flex;
+    justify-content: center;
+  }
+  &-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    animation: show 1s linear 3s forwards;
+  }
+}
+
+.error-sm {
+  margin: 0 auto;
+  position: relative;
+  &-title {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #5a5a5a;
+  }
+  &-icon {
+    font-size: 3rem;
+    color: #7d7d7d;
+    display: flex;
+    justify-content: center;
+  }
+  &-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 40%;
+    opacity: 0;
+    animation: show 1s linear 3s forwards;
+  }
+}
+
+.empty {
+  position: relative;
+  min-height: 250px;
+  &-title {
+    margin: 40px 0;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #5a5a5a;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    animation: show 1s linear 3s forwards;
+  }
+}
+
+.loading {
+  text-align: center;
+  width: 30%;
+  height: 30%;
+  line-height: 200%;
+  margin: auto;
+  animation: hide 1s linear 3s 1 forwards;
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

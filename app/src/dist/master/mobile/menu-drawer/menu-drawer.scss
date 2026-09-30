@@ -1,0 +1,96 @@
+@import './app/assets/mixins/shared.scss';
+.drawer {
+  background-color: #535353;
+  color: #fff;
+  font-size: 0.875rem;
+  width: 70vw;
+  max-width: 280px;
+  height: 100%;
+  overflow: auto;
+  &-toolbar {
+    background-color: #fff;
+    color: #434343;
+  }
+}
+
+.menu {
+  &-login {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid #707070;
+    line-height: 2rem;
+    &-icon {
+      font-size: 3rem;
+      margin-right: 0.75rem;
+    }
+    &-btn {
+      font-size: inherit;
+      line-height: 3rem;
+    }
+  }
+  &-avatar {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    background-size: contain;
+    border-radius: 1.5rem;
+    border: 2px solid #fff;
+  }
+  &-member-block {
+    display: flex;
+    flex-direction: column;
+  }
+  &-member-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  &-member-edit-btn {
+    padding: 0 !important;
+    margin-top: -0.3rem !important;
+    color: #e0e0e0 !important;
+  }
+  &-logout {
+    display: flex;
+    justify-content: left;
+    padding: 1rem;
+    border-bottom: 1px solid #707070;
+    line-height: 2rem;
+  }
+  &-main {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #707070;
+    &.open {
+      border-left: 0.5rem solid $color-red;
+      border-bottom: 0px;
+    }
+  }
+  &-main-title {
+    padding: 1rem;
+  }
+  &-main-title-open {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+  &-sub {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    background-color: #707070;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    &.close {
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+  }
+  &-sub-title {
+    width: 50%;
+    padding: 0.25rem 0;
+  }
+}

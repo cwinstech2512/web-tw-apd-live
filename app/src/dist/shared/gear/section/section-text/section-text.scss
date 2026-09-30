@@ -1,0 +1,17 @@
+.section {
+  padding: 8px 16px;
+  border-bottom: 1px solid #bebebe;
+  cursor: pointer;
+  &-box {
+    width: 100%;
+  }
+  &-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  &-date {
+    font-size: 0.75rem;
+    color: #bebebe;
+    text-align: end;
+  }
+}
